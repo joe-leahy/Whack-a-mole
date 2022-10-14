@@ -23,17 +23,14 @@ function startGame(){
   var interval = setInterval(() => {
     //Generate a random number
     const random = Math.floor(Math.random() * length);
-  
-
+    
     //Remove the active class from every zone
     zones.forEach((e) => {
     e.classList.remove("active");
     });
    
     zones[random].classList.add("active");
-    }
-    
-  , 1200);
+    } , 900);
 }
 
 function endGame(){

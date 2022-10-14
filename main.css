@@ -13,33 +13,63 @@ main{
     display: flex;
     flex-direction: column;
     width: 60vw;
-    height: 100vh;
+    height: 90vh;
     justify-content: center;
     align-items: center;
     margin: 5px;
 
 }
 
+.title{
+    display: flex;
+    justify-content: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .4rem;
+    font-size: 2rem;
+
+}
+
+#Start,
+ #End{
+
+    justify-content: center;
+    border-radius: 8px;
+    height: 2rem;
+}
+
+#Start{
+    background-color: rgb(170, 235, 170);
+    
+}
+#End{
+    background-color: rgb(185, 101, 101);
+}
+
 #header{
     display: flex;
     width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 5rem;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    background-color: antiquewhite;
+    flex: .75;
+    background-color: rgb(155, 213, 255);
 }
 
 #score{
+
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: larger;
+
 }
 
 #gameArea{
     display: flex;
-    height: 80%;
+    height: 75%;
     width: 100%;
-    background-color: lightblue;
+    background-color: rgb(139, 109, 88);
     flex-flow: wrap;
+    flex: 3;
 }
 
 .zone{
@@ -49,6 +79,14 @@ main{
     border: .5px solid black;
     flex: 1 1 33%;
     padding: 5px;
+}
+
+#prompts{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 5rem;
+    position: fixed;
+    color: aquamarine;
+    z-index:1;
 }
 
 .hole,.mole{

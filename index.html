@@ -9,11 +9,12 @@
 </head>
 <body>
     <main>
-        <!--create title and header for game with start button and score-->
-        <span>Whack-a-Mole!</span>
+        <!--create title and header for game with start button and score-->  
         <section id='header'>
+             <span class = 'title'>Whack-a-Mole!</span>
+            <div>
             <button id ="Start" onclick="startGame()">Start Game!</button>
-            <button id ="End" onclick="endGame()">End Game</button>
+            <button id ="End" onclick="endGame()">End Game</button></div>
             <span id="score">Score: <span>0</span></span>
         </section>
         <!--Create a board with 9 zones, each containing a hole and mole -->
@@ -35,6 +36,7 @@
                 <div class="mole"></div>
             </section>
             <section class="zone">
+                <span id = "prompts"></span>
                 <div class="hole"></div>
                 <div class="mole"></div>
             </section>
