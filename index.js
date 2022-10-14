@@ -1,16 +1,22 @@
 const zones = document.querySelectorAll(".zone");
-  const length = zones.length;
+const length = zones.length;
 
-  const score = document.querySelector("#score > span");
-  let count = 0;
+const score = document.querySelector("#score > span");
+let count = 0;
 
+let startButton = document.getElementById
+
+function startGame(){
+
+//create click event for when mole is clicked
   zones.forEach((e) => {
     e.addEventListener("click", () => {
-      //If ground has active class which means it has mole
-      //So increase the count
+      //increase score if zone is clicked when a mole is there
       if (e.classList.contains("active")) {
         count++;
         score.innerHTML = count;
+        //make mole disspear if clicked
+        e.classList.remove('active')
       }
     });
   });
@@ -19,11 +25,12 @@ const zones = document.querySelectorAll(".zone");
     //Generate a random number
     const random = Math.floor(Math.random() * length);
 
-    //Remove the active class from every ground
+    //Remove the active class from every 
     zones.forEach((e) => {
-      e.classList.remove("active");
+    e.classList.remove("active");
     });
 
     //Add the active class to random ground
     zones[random].classList.add("active");
-  }, 800);
+  }, 1000);
+}
