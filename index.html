@@ -9,10 +9,14 @@
 </head>
 <body>
     <main>
+        <!--create title and header for game with start button and score-->
+        <span>Whack-a-Mole!</span>
         <section id='header'>
             <button id ="Start" onclick="startGame()">Start Game!</button>
+            <button id ="End" onclick="endGame()">End Game</button>
             <span id="score">Score: <span>0</span></span>
         </section>
+        <!--Create a board with 9 zones, each containing a hole and mole -->
         <section id="gameArea">
             <section class="zone">
                 <div class="hole"></div>

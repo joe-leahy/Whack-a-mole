@@ -12,11 +12,11 @@ body{
 main{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 80vw;
+    width: 60vw;
+    height: 100vh;
     justify-content: center;
     align-items: center;
-    margin: 5rem;
+    margin: 5px;
 
 }
 
@@ -36,7 +36,7 @@ main{
 
 #gameArea{
     display: flex;
-    height: 100%;
+    height: 80%;
     width: 100%;
     background-color: lightblue;
     flex-flow: wrap;

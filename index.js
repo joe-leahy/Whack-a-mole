@@ -4,8 +4,7 @@ const length = zones.length;
 const score = document.querySelector("#score > span");
 let count = 0;
 
-let startButton = document.getElementById
-
+//function to start game when button is clicked
 function startGame(){
 
 //create click event for when mole is clicked
@@ -24,13 +23,19 @@ function startGame(){
   var interval = setInterval(() => {
     //Generate a random number
     const random = Math.floor(Math.random() * length);
+  
 
-    //Remove the active class from every 
+    //Remove the active class from every zone
     zones.forEach((e) => {
     e.classList.remove("active");
     });
-
-    //Add the active class to random ground
+   
     zones[random].classList.add("active");
-  }, 1000);
+    }
+    
+  , 1200);
+}
+
+function endGame(){
+  window.location.reload();
 }
