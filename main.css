@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameArea{
+    display: flex;
+    height: 60vw;
+    width: 60vw;
+    background-color: lightblue;
+    flex-flow: wrap;
+}
+
+.zone{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: .5px solid black;
+    flex: 1 1 33%;
+    padding: 5px;
+}
+
+.hole,.mole{
+    position: absolute;
+    width: 15vw;
+    height: 15vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.hole{
+    background-image: url(./hole.png);
+    background-position: center; 
+    
+}
+
+
+.zone.active .mole{
+    background-image: url(./mole.png);
+    background-position: center;
+}
+
+.zone.active .hole{
+    background-image: none;
+}
+
+
